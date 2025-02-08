@@ -10,4 +10,14 @@ setTimeout(() => {
   setTimeout(() => {
     loader.style.display = "none";
   }, 800);
-}, 0);
+}, 4000);
+
+const lenis = new Lenis();
+
+// Use requestAnimationFrame to continuously update the scroll
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
