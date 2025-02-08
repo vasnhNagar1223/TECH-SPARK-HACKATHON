@@ -361,7 +361,9 @@ body .cybr-btn + .cybr-btn {
 
 /* Loader Styles */
 .loader-wrapper {
-  position: fixed;
+  position: fixed; /* Ensure it covers the entire viewport */
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
   background: url("https://i.pinimg.com/originals/c2/17/97/c21797d71219c76af149e465f9d5281d.gif")
@@ -369,9 +371,10 @@ body .cybr-btn + .cybr-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
   z-index: 1000;
 }
+
 .loader {
   width: 80px;
   height: 80px;
