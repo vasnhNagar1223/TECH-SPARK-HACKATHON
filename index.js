@@ -10,7 +10,7 @@ setTimeout(() => {
   setTimeout(() => {
     loader.style.display = "none";
   }, 800);
-}, 4000);
+}, 3000);
 
 const lenis = new Lenis();
 
