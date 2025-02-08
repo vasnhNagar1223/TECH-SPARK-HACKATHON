@@ -10,4 +10,4 @@ setTimeout(() => {
   setTimeout(() => {
     loader.style.display = "none";
   }, 800);
-}, 4000);
+}, 0);
